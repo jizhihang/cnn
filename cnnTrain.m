@@ -136,7 +136,6 @@ for e = 1:epochNum
         
         mbErr = mean(delta_d(:).^2);
         err = err + mbErr;
-%         fprintf('Epoch %d MiniBatch error: %f Total error: %f\n',e,mbErr,err);
     end           
     fprintf('Epoch %d Training error: %f\n',e,err);
 %     r = 0.95*r;
